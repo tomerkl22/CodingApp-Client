@@ -30,7 +30,7 @@ export default function CodeBlock() {
     console.log('Component mounted');
     console.log('Activating STOMP client');
     //stompClient.activate();
-      const socket = new SockJS('https://codingapp-server-production.up.railway.app/ws');
+      const socket = new SockJS('https://codingapp-server-9ac053720d46.herokuapp.com/ws');
       const stompClient = new Client({
         webSocketFactory: () => socket,
         debug: (str) => {
